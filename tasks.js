@@ -62,8 +62,12 @@ function createcard(event) {
 
     containerTasks.appendChild(card)
 
+
     closeCard.addEventListener('click', () => {
-        card.style.display = 'none'
+        card.remove();
+        if (!esta) {
+            esta = true;
+        }
     })
 
 
@@ -85,17 +89,6 @@ function createcard(event) {
             }
         }
     });
-
-
-
-
-
-
-
-
-
-
-
 
 
 }
